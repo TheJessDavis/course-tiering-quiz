@@ -270,7 +270,7 @@
   <div id="quiz">
     <div class="quiz-header">
       <h1>Course Tiering Quiz</h1>
-      <p>Answer 7 questions to find out how much measurement this course actually warrants — from a basic knowledge check all the way to tracking whether behavior changed on the job and whether a business metric moved.</p>
+      <p>Answer 7 questions to find out how much measurement this course warrants, from a basic knowledge check all the way to tracking whether behavior changed on the job and whether a business metric moved.</p>
     </div>
 
     <div class="progress-meta">
@@ -300,11 +300,11 @@
   const questions = [
     {
       text: "What's the realistic cost if a learner gets this wrong on the job?",
-      context: "Think about what actually happens downstream when someone misapplies or forgets this content — not the worst-case scenario, but the typical one.",
+      context: "Think about what happens downstream when someone misapplies or forgets this content. Not the worst-case scenario, but the typical one.",
       options: [
         {
-          label: "No real consequence",
-          sub: "Awareness or background content. Errors would be minor, self-correcting, or completely invisible in day-to-day work.",
+          label: "No direct consequence",
+          sub: "Awareness or background content. Errors would be minor, self-correcting, or invisible in day-to-day work.",
           score: 1
         },
         {
@@ -326,32 +326,32 @@
     },
     {
       text: "Is there a specific, observable job behavior this course is supposed to change or support?",
-      context: "The key question: can you describe what a learner should DO differently after this course — not just what they should know?",
+      context: "The key question: can you describe what a learner should DO differently after this course, not just what they should know?",
       options: [
         {
-          label: "No — it's background knowledge",
+          label: "No: it's background knowledge",
           sub: "The stakeholder's answer was \"they should just know this.\" No clear task or behavior is attached. There's no obvious performance gap driving it.",
           score: 1
         },
         {
-          label: "Sort of — behaviors exist but are hard to isolate",
+          label: "Sort of: behaviors exist but are hard to isolate",
           sub: "There are job tasks loosely connected to this content, but they're mixed in with other skills, hard to observe, or only come up in rare or unusual situations.",
           score: 2
         },
         {
-          label: "Yes — clear, observable job tasks",
+          label: "Yes: clear, observable job tasks",
           sub: "You can name the exact steps a learner should do differently. A manager could watch someone do those tasks and evaluate whether training did its job.",
           score: 3
         },
         {
-          label: "Yes — and performance in this area is already being formally tracked or audited",
+          label: "Yes, and performance in this area is already being formally tracked or audited",
           sub: "There's an existing quality review, audit process, or performance standard against which this behavior is already being measured. Training should move that number.",
           score: 4
         }
       ]
     },
     {
-      text: "How often will learners actually apply this content on the job?",
+      text: "How often will learners apply this content on the job?",
       context: "Frequency matters for measurement. Low-frequency content is hard to evaluate through behavior because there's not enough opportunity to observe it.",
       options: [
         {
@@ -365,12 +365,12 @@
           score: 2
         },
         {
-          label: "Daily or weekly — this is core work",
+          label: "Daily or weekly: this is core work",
           sub: "This is central to how they do their job. Errors or gaps here would show up quickly in their day-to-day performance.",
           score: 3
         },
         {
-          label: "Multiple times per day — this is a repeating core task",
+          label: "Multiple times per day: this is a repeating core task",
           sub: "This content covers something learners do constantly. Any gap in performance would be immediately visible in output volume, error queues, or supervisor feedback.",
           score: 4
         }
@@ -378,7 +378,7 @@
     },
     {
       text: "Is there a regulatory, compliance, or accreditation requirement tied to this content?",
-      context: "Content with external accountability — audits, accreditation reviews, CMS requirements — warrants rigorous documentation that training was effective, not just completed.",
+      context: "Content with external accountability (audits, accreditation reviews, CMS requirements) warrants rigorous documentation that training was effective, not just completed.",
       options: [
         {
           label: "No external requirement",
@@ -387,16 +387,16 @@
         },
         {
           label: "Loosely related to a compliance area",
-          sub: "The content supports compliance generally — billing integrity, HIPAA awareness — but it's not directly mandated or audited.",
+          sub: "The content supports compliance generally (billing integrity, HIPAA awareness) but it's not directly mandated or audited.",
           score: 2
         },
         {
-          label: "Directly required — audit or accreditation risk if untrained",
+          label: "Directly required: audit or accreditation risk if untrained",
           sub: "Regulators, payers, or accrediting bodies could ask for evidence that staff are trained AND performing correctly in this area.",
           score: 3
         },
         {
-          label: "Actively audited — we have been cited or flagged in this area before",
+          label: "Actively audited: we have been cited or flagged in this area before",
           sub: "This content area has generated a findings letter, corrective action plan, payer audit, or compliance flag. There is documented organizational risk.",
           score: 4
         }
@@ -404,25 +404,25 @@
     },
     {
       text: "How large is the audience for this course?",
-      context: "Bigger audiences mean more data points for measurement — and more organizational impact when training either works or doesn't.",
+      context: "Bigger audiences mean more data points for measurement and more organizational impact when training either works or doesn't.",
       options: [
         {
-          label: "Small group — under 15 people",
+          label: "Small group: under 15 people",
           sub: "A specific team, a niche role, or a one-time onboarding cohort. Sample size is too small for meaningful quantitative analysis.",
           score: 1
         },
         {
-          label: "Medium group — 15 to 50 people",
+          label: "Medium group: 15 to 50 people",
           sub: "A department, a functional cohort, or a recurring training that builds up a meaningful sample over time.",
           score: 2
         },
         {
-          label: "Large group — 50 to 150 people",
+          label: "Large group: 50 to 150 people",
           sub: "Broad audience across teams or locations. Enough volume to identify patterns in performance data and make meaningful comparisons.",
           score: 3
         },
         {
-          label: "Enterprise-wide — 150+ people or multiple sites",
+          label: "Enterprise-wide: 150+ people or multiple sites",
           sub: "This course reaches a significant portion of the organization. Training effectiveness at this scale has direct operational impact that leadership can see.",
           score: 4
         }
@@ -430,7 +430,7 @@
     },
     {
       text: "Is there a business metric you could realistically tie to this training?",
-      context: "This doesn't have to be perfect — you're looking for a metric that would move if the training worked and move in the wrong direction if it didn't.",
+      context: "This doesn't have to be perfect. You're looking for a metric that would move if the training worked and move in the wrong direction if it didn't.",
       options: [
         {
           label: "No obvious metric exists",
@@ -438,17 +438,17 @@
           score: 1
         },
         {
-          label: "Maybe — a metric exists but isolating training's impact would be difficult",
+          label: "Maybe: a metric exists but isolating the impact would be difficult",
           sub: "There's a relevant KPI (denial rates, error rates, etc.) but many factors drive it. Training's contribution would be hard to separate from everything else.",
           score: 2
         },
         {
-          label: "Yes — there's a direct, trackable metric",
+          label: "Yes: there's a direct, trackable metric",
           sub: "You can name it: first-pass resolution rate, denial rate for a specific code type, rework volume, claim processing time. Before/after comparison is feasible.",
           score: 3
         },
         {
-          label: "Yes — and leadership already monitors this metric regularly",
+          label: "Yes, and leadership already monitors this metric regularly",
           sub: "This KPI appears in dashboards, team reviews, or reports that Stephen, Pickett, or operations leadership already look at. Training impact would be immediately visible.",
           score: 4
         }
@@ -459,7 +459,7 @@
       context: "Level 3 measurement (behavior change) requires a feedback loop between training and the work environment. Without manager involvement, behavior change is hard to verify and hard to sustain.",
       options: [
         {
-          label: "No — learners are on their own after the course",
+          label: "No: learners are on their own after the course",
           sub: "There's no expectation that managers will observe, coach, or follow up on this content. Learning stops at the LMS completion mark.",
           score: 1
         },
@@ -543,69 +543,69 @@
     const tiers = {
       1: {
         badgeClass: 'tier-1-badge',
-        label:      'Tier 1 — Foundational',
+        label:      'Tier 1: Foundational',
         title:      'Foundational / informational course',
-        subtitle:   'This course is awareness-level content with limited direct performance impact. Keep measurement lightweight. A reaction survey and a knowledge check are sufficient — adding more won\'t generate useful data and will waste learner and admin time.',
+        subtitle:   'This course is awareness-level content with limited direct performance impact. A reaction survey and a knowledge check are sufficient. Adding more won\'t generate useful data and will waste learner and admin time.',
         scoreColor: '#16a34a',
         levels: [
           {
             tag:  'Level 1',
             name: 'Reaction survey',
-            desc: 'Did learners find the content relevant, clear, and useful? Not "did they enjoy it" — did it feel applicable to their work.',
+            desc: 'Did learners find the content relevant, clear, and useful? The goal is not to measure enjoyment but whether it felt applicable to their work.',
             howto: '<strong>How to build it:</strong> 3–5 questions max. Likert scale (1–5) for relevance, clarity, and usefulness. One open-field question: "What would make this course more useful?" Deliver via LMS on course exit or auto-trigger a Microsoft Form on completion. Keep it under 2 minutes.'
           },
           {
             tag:  'Level 2',
             name: 'Knowledge check',
-            desc: 'Did learners actually retain the core concepts? This is not a trivia quiz — questions should reflect real judgment calls or scenarios a learner would face on the job.',
-            howto: '<strong>How to build it:</strong> 5–10 scenario-based questions. Avoid recall questions like "What does COBRA stand for?" — use applied questions like "A patient lost job-based coverage 45 days ago. Which coverage type applies?" Build directly into the course, not as a separate survey. Require a passing score if the content is important enough to measure.'
+            desc: 'Did learners retain the core concepts? This is not a trivia quiz. Questions should reflect real judgment calls or scenarios a learner would face on the job.',
+            howto: '<strong>How to build it:</strong> 5–10 scenario-based questions. Avoid recall questions like "What does COBRA stand for?" and use applied questions like "A patient lost job-based coverage 45 days ago. Which coverage type applies?" Build directly into the course, not as a separate survey. Require a passing score if the content is important enough to measure.'
           }
         ]
       },
       2: {
         badgeClass: 'tier-2-badge',
-        label:      'Tier 2 — Process-based',
+        label:      'Tier 2: Process-based',
         title:      'Process-based / applied course',
-        subtitle:   'This course supports real job tasks with moderate stakes. Learners need more than a knowledge check — you need to know if behavior actually changed after they left the course. A 30-day follow-up is the key differentiator at this tier. Most of your revenue cycle courses should land here.',
+        subtitle:   'This course supports real job tasks with moderate stakes. A knowledge check alone is not enough. You need to know if behavior changed after learners left the course. A 30-day follow-up is the key differentiator at this tier. Most revenue cycle courses should land here.',
         scoreColor: '#d97706',
         levels: [
           {
             tag:  'Level 1',
             name: 'Reaction survey',
-            desc: 'Covers relevance, clarity, and perceived applicability. At this tier, also ask whether the course reflected how work actually happens — not just textbook process.',
+            desc: 'Covers relevance, clarity, and perceived applicability. At this tier, also ask whether the course reflected how work is done on the job, not just textbook process.',
             howto: '<strong>How to build it:</strong> 4–5 questions. Add one question specific to process applicability: "How closely did this course reflect the real process you use on the job?" (1–5 scale). One open field for suggestions. Auto-trigger on course completion.'
           },
           {
             tag:  'Level 2',
             name: 'Pre/post knowledge check',
-            desc: 'At this tier, use a pre-assessment before the course begins and the same (or parallel) assessment after. This shows actual knowledge gain, not just whether someone could guess correctly.',
+            desc: 'At this tier, use a pre-assessment before the course begins and the same (or parallel) assessment after. This shows real knowledge gain, not just whether someone could guess correctly.',
             howto: '<strong>How to build it:</strong> 8–12 scenario-based questions. Use the same question set (or a parallel form) pre and post. The gap between scores is your Level 2 measurement. Store both scores in the LMS or export to Excel for comparison. Flag learners who score below threshold post-course for follow-up.'
           },
           {
             tag:  'Level 3',
             name: '30-day behavior follow-up',
-            desc: 'This is the measurement most courses skip — and the one that tells you whether the training actually mattered. At 30 days, you\'re asking: did behavior change on the job?',
+            desc: 'This is the measurement most courses skip, and the one that tells you whether the training had any impact. At 30 days, you\'re asking: did behavior change on the job?',
             howto: '<strong>How to build it:</strong> Send a short Microsoft Form automatically 30 days after LMS completion. 4–5 questions: "How often have you applied what you learned?" / "What, if anything, is preventing you from applying it?" / "What would have made the training more useful for your day-to-day work?" Optional: send a parallel 2-question version to the learner\'s manager asking whether they\'ve observed the target behavior.'
           }
         ]
       },
       3: {
         badgeClass: 'tier-3-badge',
-        label:      'Tier 3 — High-stakes',
+        label:      'Tier 3: High-stakes',
         title:      'High-stakes / strategic course',
-        subtitle:   'This course has real business impact — errors here cost money, create compliance risk, or directly affect patient account outcomes. All four Kirkpatrick levels apply. Manager involvement at Level 3 is not optional. This tier requires the most infrastructure but produces data that can actually be presented to Pickett-level leadership as evidence that training is working.',
+        subtitle:   'This course has real business impact. Errors here cost money, create compliance risk, or directly affect patient account outcomes. All four Kirkpatrick levels apply. Manager involvement at Level 3 is not optional. This tier requires the most infrastructure but produces data you can put in front of senior leadership as evidence that training is working.',
         scoreColor: '#dc2626',
         levels: [
           {
             tag:  'Level 1',
             name: 'Reaction survey',
-            desc: 'Same as lower tiers, but at this tier also ask specifically whether the course reflected the actual complexity of the work — not a simplified version of it.',
+            desc: 'Same as lower tiers, but at this tier also ask specifically whether the course reflected the real complexity of the work, not a simplified version of it.',
             howto: '<strong>How to build it:</strong> 5 questions. Add: "Did this course reflect the real complexity and unusual situations you encounter on the job?" (1–5) and "What scenario or situation would you add to make this more realistic?" Auto-trigger on course completion.'
           },
           {
             tag:  'Level 2',
             name: 'Pre/post knowledge check with performance threshold',
-            desc: 'At this tier, the post-assessment has teeth. Learners who fall below the threshold should be flagged for follow-up or re-training — not just allowed to proceed.',
+            desc: 'At this tier, the post-assessment has consequences. Learners who fall below the threshold should be flagged for follow-up or re-training, not just allowed to proceed.',
             howto: '<strong>How to build it:</strong> 10–15 scenario-based questions. Set a minimum passing threshold (e.g., 80%). Learners below threshold get auto-enrolled in a follow-up session or are flagged for manager coaching. Export pre/post scores to track knowledge gain over time. Consider branching: learners who score very high on the pre-assessment get an advanced path.'
           },
           {
@@ -616,9 +616,9 @@
           },
           {
             tag:  'Level 4',
-            name: 'Business results — before/after metric tracking',
+            name: 'Business results: before and after metric tracking',
             desc: 'This is where you connect training to the number that matters. Identify the metric before the course launches, capture a baseline, then track it at 60 and 90 days post-training.',
-            howto: '<strong>How to build it:</strong> Pick one primary metric before launch — denial rate for the relevant code type, first-pass resolution rate, rework volume, error count per 100 claims, whatever operations already tracks. Pull a 90-day baseline. Run the training. Pull the same metric at 60 and 90 days post-training. Compare. Build a simple before/after chart in Power BI. Present it to Stephen or Pickett as evidence of impact — not just completion numbers.'
+            howto: '<strong>How to build it:</strong> Pick one primary metric before launch: denial rate for the relevant code type, first-pass resolution rate, rework volume, error count per 100 claims, whatever operations already tracks. Pull a 90-day baseline. Run the training. Pull the same metric at 60 and 90 days post-training. Compare. Build a simple before/after chart in Power BI. Present it to senior leadership as evidence of impact, not just completion numbers.'
           }
         ]
       }
