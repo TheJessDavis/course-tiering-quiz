@@ -403,32 +403,6 @@
       ]
     },
     {
-      text: "How large is the audience for this course?",
-      context: "Bigger audiences mean more data points for measurement and more organizational impact when training either works or doesn't.",
-      options: [
-        {
-          label: "Small group: under 15 people",
-          sub: "A specific team, a niche role, or a one-time onboarding cohort. Sample size is too small for meaningful quantitative analysis.",
-          score: 1
-        },
-        {
-          label: "Medium group: 15 to 50 people",
-          sub: "A department, a functional cohort, or a recurring training that builds up a meaningful sample over time.",
-          score: 2
-        },
-        {
-          label: "Large group: 50 to 150 people",
-          sub: "Broad audience across teams or locations. Enough volume to identify patterns in performance data and make meaningful comparisons.",
-          score: 3
-        },
-        {
-          label: "Enterprise-wide: 150+ people or multiple sites",
-          sub: "This course reaches a significant portion of the organization. Training effectiveness at this scale has direct operational impact that leadership can see.",
-          score: 4
-        }
-      ]
-    },
-    {
       text: "Is there a business metric you could realistically tie to this training?",
       context: "This doesn't have to be perfect. You're looking for a metric that would move if the training worked and move in the wrong direction if it didn't.",
       options: [
@@ -536,7 +510,7 @@
 
   function showResult() {
     const total = answers.reduce((sum, a, i) => sum + (a !== null ? questions[i].options[a].score : 0), 0);
-    const max   = questions.length * 4;  // 28
+    const max   = questions.length * 4;  // 24
     const pct   = Math.round((total / max) * 100);
 
     // ── Tier config ──
@@ -625,8 +599,8 @@
     };
 
     let tierKey;
-    if (total <= 13) tierKey = 1;
-    else if (total <= 20) tierKey = 2;
+    if (total <= 11) tierKey = 1;
+    else if (total <= 17) tierKey = 2;
     else tierKey = 3;
 
     const t = tiers[tierKey];
@@ -669,9 +643,9 @@
           <div class="score-fill-result" style="width: ${pct}%; background: ${t.scoreColor};"></div>
         </div>
         <div class="zone-labels">
-          <span>Tier 1 (7–13)</span>
-          <span>Tier 2 (14–20)</span>
-          <span>Tier 3 (21–28)</span>
+          <span>Tier 1 (6–11)</span>
+          <span>Tier 2 (12–17)</span>
+          <span>Tier 3 (18–24)</span>
         </div>
       </div>
 
